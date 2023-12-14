@@ -1,0 +1,28 @@
+@use "../../styles/variables" as *;
+
+header {
+  width: 100%;
+  margin-top: 5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 4.5rem;
+    }
+
+    .login-button {
+      color: $white;
+      background-color: $black_500;
+      border-radius: 1.8rem;
+      font-size: 1.4rem;
+      padding: 1.2rem 2.5rem;
+    }
+  }
+}

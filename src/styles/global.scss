@@ -11,17 +11,12 @@ body {
   font-size: 10px;
   font-family: "Kanit", sans-serif;
   padding: 0 5%;
-  position: relative;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
   color: inherit;
-}
-
-span {
-  display: inline-block;
 }
 
 ul,
@@ -36,4 +31,20 @@ h4,
 h5,
 h6 {
   font-family: "Charm", cursive;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+
+  @include mobile {
+  }
+
+  @include laptop {
+    padding-top: 126px;
+  }
 }

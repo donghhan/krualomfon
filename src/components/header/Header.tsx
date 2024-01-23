@@ -1,18 +1,21 @@
-import "./style.Header.scss";
+import "./style.scss";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import bag from "public/icons/bag.svg";
 
 export default function Header(): JSX.Element {
+  const t = useTranslations("Header");
+
   return (
     <header>
       <ul>
         <li>
           <Link href="/" className="logo">
-            ลมฝน
+            {t("Logo")}
           </Link>
         </li>
-        <li>
+        {/* <li>
           <div
             className="user-menus"
             style={{ display: "flex", alignItems: "center", gap: "1.5em" }}
@@ -24,7 +27,7 @@ export default function Header(): JSX.Element {
               Login
             </Link>
           </div>
-        </li>
+        </li> */}
       </ul>
     </header>
   );

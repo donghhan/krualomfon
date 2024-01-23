@@ -2,7 +2,6 @@
 
 header {
   width: 100%;
-  margin-top: 5rem;
   position: sticky;
   top: 0;
   left: 0;
@@ -14,6 +13,7 @@ header {
     justify-content: space-between;
 
     .logo {
+      font-family: $charm;
       font-size: 4.5rem;
     }
 

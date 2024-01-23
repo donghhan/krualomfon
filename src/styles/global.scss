@@ -10,7 +10,6 @@ html,
 body {
   font-size: 10px;
   font-family: "Kanit", sans-serif;
-  padding: 0 5%;
 }
 
 a {
@@ -38,13 +37,15 @@ button {
   cursor: pointer;
 }
 
-main {
+main,
+header,
+footer {
   width: 100%;
 
   @include mobile {
   }
 
   @include laptop {
-    padding-top: 126px;
+    padding: 10em 5% 10em;
   }
 }

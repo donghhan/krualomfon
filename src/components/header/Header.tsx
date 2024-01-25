@@ -43,7 +43,7 @@ export default function Header(): JSX.Element {
                 onClick={languageSelector}
                 value="th"
               >
-                ไทย
+                <span style={{ fontSize: "2.5rem" }}>ก</span>ก
               </button>
             ) : (
               <button

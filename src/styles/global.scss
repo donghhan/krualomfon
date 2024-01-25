@@ -9,6 +9,7 @@
 html,
 body {
   font-size: 10px;
+  font-family: $prompt;
 }
 
 a {
@@ -35,6 +36,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  font-family: $prompt;
 }
 
 main {

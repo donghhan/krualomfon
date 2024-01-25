@@ -1,22 +1,61 @@
+"use client";
 import "./style.scss";
-import { useTranslations } from "next-intl";
+import { useTransition } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "./LanguageSwitcher";
 import Link from "next/link";
 import Image from "next/image";
 import bag from "public/icons/bag.svg";
 
+interface LanguageSwitcherProp {
+  defaultValue: string;
+  label: string;
+}
+
 export default function Header(): JSX.Element {
   const t = useTranslations("Header");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
+
+  const languageSelector = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const language = event.currentTarget.getAttribute("value") as string;
+    console.log(language);
+    startTransition(() => {
+      router.replace(pathname, { locale: language });
+    });
+  };
 
   return (
     <header>
       <ul>
-        <li>
+        <li className="logo-wrapper">
           <Link href="/" className="logo">
             {t("Logo")}
           </Link>
         </li>
-        {/* <li>
-          <div
+        <li>
+          <div className="language-selector">
+            {locale === "en" ? (
+              <button
+                className="language-button"
+                onClick={languageSelector}
+                value="th"
+              >
+                ไทย
+              </button>
+            ) : (
+              <button
+                className="language-button"
+                onClick={languageSelector}
+                value="en"
+              >
+                Aa
+              </button>
+            )}
+          </div>
+          {/* <div
             className="user-menus"
             style={{ display: "flex", alignItems: "center", gap: "1.5em" }}
           >
@@ -26,8 +65,8 @@ export default function Header(): JSX.Element {
             <Link href="/" className="login-button">
               Login
             </Link>
-          </div>
-        </li> */}
+          </div> */}
+        </li>
       </ul>
     </header>
   );

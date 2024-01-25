@@ -9,7 +9,6 @@
 html,
 body {
   font-size: 10px;
-  font-family: "Kanit", sans-serif;
 }
 
 a {
@@ -34,12 +33,11 @@ h6 {
 
 button {
   border: none;
+  background-color: transparent;
   cursor: pointer;
 }
 
-main,
-header,
-footer {
+main {
   width: 100%;
 
   @include mobile {

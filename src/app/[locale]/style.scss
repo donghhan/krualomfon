@@ -1,0 +1,16 @@
+@use "../../styles/variables/" as *;
+
+.container {
+  margin-top: 5em;
+
+  .section-title {
+    @include laptop {
+      font-size: 5rem;
+    }
+  }
+
+  .card-wrapper {
+    margin-top: 5em;
+    border: 1px solid red;
+  }
+}

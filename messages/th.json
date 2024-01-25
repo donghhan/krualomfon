@@ -1,6 +1,19 @@
 {
+    "Header": {
+        "Logo": "ลมฝน"
+    },
     "Main": {
         "Section_Title": "เมนู",
-        "Choose_Button": "เลือก"
+        "Choose_Button": "เลือก",
+        "Dish": {
+            "Drunken_Noodle": {
+                "Name": "Drunken Noodle",
+                "Description": "Drunken Noodle Description"
+            },
+            "Kuay_Chap": {
+                "Name": "Kuay Chap",
+                "Description": "Kuay Chap Description"
+            }
+        }
     }
 }

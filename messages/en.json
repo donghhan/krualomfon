@@ -1,6 +1,19 @@
 {
+    "Header": {
+        "Logo": "LomFon"
+    },
     "Main": {
         "Section_Title": "Menu",
-        "Choose_Button": "Choose"
+        "Choose_Button": "Choose",
+        "Dish": {
+            "Drunken_Noodle": {
+                "Name": "Drunken Noodle",
+                "Description": "Drunken Noodle Description"
+            },
+            "Kuay_Chap": {
+                "Name": "Kuay Chap",
+                "Description": "Kuay Chap Description"
+            }
+        }
     }
 }

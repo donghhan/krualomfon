@@ -6,6 +6,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  padding-top: 2em;
+  background-color: $white;
 
   ul {
     display: flex;
@@ -13,7 +15,7 @@ header {
     justify-content: space-between;
 
     .logo {
-      font-family: $charm;
+      font-family: $kanit;
       font-size: 4.5rem;
     }
 
@@ -23,6 +25,10 @@ header {
       border-radius: 1.8rem;
       font-size: 1.4rem;
       padding: 1.2rem 2.5rem;
+    }
+
+    .language-button {
+      font-size: 2rem;
     }
   }
 }

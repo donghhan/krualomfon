@@ -15,5 +15,8 @@
                 "Description": "Kuay Chap Description"
             }
         }
+    },
+    "FoodCard": {
+        "Choose": "เลือก"
     }
 }

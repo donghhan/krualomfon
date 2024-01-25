@@ -3,14 +3,43 @@
 .container {
   margin-top: 5em;
 
+  @include mobile {
+    padding: 3.5%;
+  }
+
+  @include laptop {
+    padding: 0;
+  }
+
   .section-title {
+    @include mobile {
+      font-size: 5vmin;
+    }
+
     @include laptop {
       font-size: 5rem;
     }
   }
 
   .card-wrapper {
-    margin-top: 5em;
-    border: 1px solid red;
+    display: grid;
+    width: 100%;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include laptop {
+      margin-top: 5em;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

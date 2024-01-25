@@ -22,6 +22,48 @@ export default function Home() {
       description: t("Dish.Kuay_Chap.Description"),
       src: food,
     },
+    {
+      id: "kuay-chap-1",
+      name: t("Dish.Kuay_Chap.Name"),
+      price: 40,
+      description: t("Dish.Kuay_Chap.Description"),
+      src: food,
+    },
+    {
+      id: "kuay-chap-2",
+      name: t("Dish.Kuay_Chap.Name"),
+      price: 40,
+      description: t("Dish.Kuay_Chap.Description"),
+      src: food,
+    },
+    {
+      id: "1",
+      name: t("Dish.Drunken_Noodle.Name"),
+      price: 40,
+      description: t("Dish.Drunken_Noodle.Description"),
+      src: food,
+    },
+    {
+      id: "2",
+      name: t("Dish.Kuay_Chap.Name"),
+      price: 40,
+      description: t("Dish.Kuay_Chap.Description"),
+      src: food,
+    },
+    {
+      id: "3",
+      name: t("Dish.Kuay_Chap.Name"),
+      price: 40,
+      description: t("Dish.Kuay_Chap.Description"),
+      src: food,
+    },
+    {
+      id: "4",
+      name: t("Dish.Kuay_Chap.Name"),
+      price: 40,
+      description: t("Dish.Kuay_Chap.Description"),
+      src: food,
+    },
   ];
 
   return (
